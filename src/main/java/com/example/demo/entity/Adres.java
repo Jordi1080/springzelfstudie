@@ -5,11 +5,15 @@ import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 @Data
 @AllArgsConstructor
 public class Adres {
+
+    @Id
+    private Long id;
 
     private String straatnaam;
 
@@ -19,6 +23,6 @@ public class Adres {
 
     public static Adres createAdres(String inputString){
         // TODO
-        return new Adres(args);
+        return null;
     }
 }
