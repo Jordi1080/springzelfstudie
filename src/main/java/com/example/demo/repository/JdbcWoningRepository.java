@@ -1,5 +1,6 @@
 package com.example.demo.repository;
 
+import com.example.demo.entity.Adres;
 import com.example.demo.entity.Woning;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -7,6 +8,8 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import static com.example.demo.entity.Adres.createAdres;
 
 
 // TODO: niet meer String en int door elkaar gebruiken voor (bag)id
@@ -35,12 +38,26 @@ public class JdbcWoningRepository implements WoningRepository {
                 this::mapRowToWoning, id);
     }
 
+    @Override
+    public Woning save(Woning woning){
+        jdbcTemplate.update(
+                "INSERT INTO woning(bagid, adres, oppervlakte, bouwjaar) VALUES (?, ?, ?)",
+                woning.getBagId(),
+                woning.getAdres(),
+                woning.getOppervlakte(),
+                woning.getBouwjaar());
+                return woning;
+        )
+    }
+
     private Woning mapRowToWoning(ResultSet rs, int rowNum) throws SQLException {
         return new Woning(
                 rs.getInt("bagid"),
-                rs.getObject("adres"),
+                createAdres(rs.getString("adres")),
                 rs.getInt("oppervlakte"),
                 rs.getInt("bouwjaar")
         );
     }
+
+
 }
