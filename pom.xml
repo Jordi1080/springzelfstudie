@@ -27,6 +27,10 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
@@ -57,8 +61,13 @@
             <scope>test</scope>
         </dependency>
 
-<!--        DOET HET NIET ALS LOSSE DEPENDENCY-->
-<!--         https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-->
+        <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+<!--        <dependency>-->
+<!--            <groupId>org.freemarker</groupId>-->
+<!--            <artifactId>freemarker</artifactId>-->
+<!--            <version>2.3.28</version>-->
+<!--        </dependency>-->
+
 <!--        <dependency>-->
 <!--            <groupId>org.thymeleaf</groupId>-->
 <!--            <artifactId>thymeleaf</artifactId>-->
@@ -74,6 +83,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
