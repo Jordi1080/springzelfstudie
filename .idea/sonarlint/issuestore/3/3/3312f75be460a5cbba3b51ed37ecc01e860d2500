@@ -1,0 +1,10 @@
+
+isquid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(÷Û‘°8¢Ø·þ-
+“squid:UselessImportCheck"cRemove this unused import 'org.springframework.security.crypto.password.DelegatingPasswordEncoder'.(ß¯òŒûÿÿÿÿ8žÉð¸þ-
+nsquid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(ŽÕñúúÿÿÿÿ8¢Ø·þ-
+nsquid:CallToDeprecatedMethod"?Remove this use of "StandardPasswordEncoder"; it is deprecated.(¥ÆâÌ8ÓÜŸÀþ-
+Jsquid:S5344",Use secure "PasswordEncoder" implementation.(¥ÆâÌ8ÓÜŸÀþ-
+isquid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(â¯ ¢8»æÈ¾þ-
+hsquid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(¤®À8î¹¢¹þ-
+nsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(ŽÕñúúÿÿÿÿ8»æÈ¾þ-
+nsquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(ŽÕñúúÿÿÿÿ8î¹¢¹þ-
