@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    schema:
+      - order-schema.sql
+      - ingredient-schema.sql
+      - taco-schema.sql
+      - user-schema.sql
+    data:
+      - ingredients.sql
+    url: jdbc:mysql://localhost/tacocloud
+    username: tacodb
+    password: tacopassword
+    jndi-name: java:/comp/env/jdbc/tacoCloudDS
+
+#    wordt niet herkend
+#    driver-class-name: com.mysql.jdbc.Driver
