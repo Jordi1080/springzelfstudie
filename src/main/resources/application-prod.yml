@@ -1,3 +1,8 @@
+#actief voor alle profiles:
+#logging:
+#  level:
+#    tacos: DEBUG
+#
 #spring:
 #  datasource:
 #    schema:
@@ -11,10 +16,15 @@
 #    username: tacodb
 #    password: tacopassword
 #    jndi-name: java:/comp/env/jdbc/tacoCloudDS
-
-#    wordt niet herkend
-#    driver-class-name: com.mysql.jdbc.Driver
-
+#
+#---
+##alles onder de --- is alleen specifiek voor deze profile
+#spring:
+#  profiles: prod
+#  datasource:
+#    url: jdbc:mysql://localhost/tacocloud
+#    username: tacodb
+#    password: tacopassword
 #logging:
 #  level:
-#    tacos: DEBUG
+#    tacos: WARN

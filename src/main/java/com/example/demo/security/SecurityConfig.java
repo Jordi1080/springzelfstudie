@@ -34,7 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 // voor deze urls moet je role user hebben om erbij te kunnen
                 // TODO: urls hier aanpassen naar bestaande links
-                .antMatchers("/design", "/orders")
+                .antMatchers("/test", "/orders")
                 // mag niet "ROLE_USER" zijn, waarom?
                 .hasRole("USER")
                 // hier mag iedereen bij
