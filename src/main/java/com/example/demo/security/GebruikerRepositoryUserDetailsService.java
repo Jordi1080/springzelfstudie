@@ -1,15 +1,11 @@
 package com.example.demo.security;
 
-import com.example.demo.entity.Gebruiker;
 import com.example.demo.repository.GebruikerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GebruikerRepositoryUserDetailsService implements UserDetailsService {
+public class GebruikerRepositoryUserDetailsService { //} implements UserDetailsService {
     private GebruikerRepository gebrRepo;
 
     @Autowired
@@ -18,15 +14,15 @@ public class GebruikerRepositoryUserDetailsService implements UserDetailsService
     }
 
     // load Gebruiker of load User?
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Gebruiker gebruiker = gebrRepo.findByUsername(username);
-
-        if (gebruiker != null) {
-            return gebruiker;
-        }
-
-        throw new UsernameNotFoundException(
-                "Gebruiker '" + username + "' niet gevonden.");
-    }
+//    @Override
+//    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+//        Gebruiker gebruiker = gebrRepo.findByUsername(username);
+//
+//        if (gebruiker != null) {
+//            return gebruiker;
+//        }
+//
+//        throw new UsernameNotFoundException(
+//                "Gebruiker '" + username + "' niet gevonden.");
+//    }
 }

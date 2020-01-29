@@ -1,52 +1,44 @@
 package com.example.demo.security;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.crypto.password.StandardPasswordEncoder;
-
-import javax.sql.DataSource;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Autowired
-    DataSource dataSource;
-
-    @Autowired
-    private UserDetailsService uds;
-
-    @Bean
-    public PasswordEncoder encoder() {
-        return new StandardPasswordEncoder("Welkom01");
-    }
-
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http
-                // secure dingen moeten bovenaan, pas onderaan de permit all
-                .authorizeRequests()
-                // voor deze urls moet je role user hebben om erbij te kunnen
-                // TODO: urls hier aanpassen naar bestaande links
-                .antMatchers("/test", "/orders")
-                // mag niet "ROLE_USER" zijn, waarom?
-                .hasRole("USER")
-                // hier mag iedereen bij
-                .antMatchers("/", "/**")
-                .permitAll()
-
-                // test
-                .and()
-                .logout()
-                .logoutSuccessUrl("/");
-
-    }
+//    @Autowired
+//    DataSource dataSource;
+//
+//    @Autowired
+//    private UserDetailsService uds;
+//
+//    @Bean
+//    public PasswordEncoder encoder() {
+//        return new StandardPasswordEncoder("Welkom01");
+//    }
+//
+//    @Override
+//    protected void configure(HttpSecurity http) throws Exception {
+//        http
+//                // secure dingen moeten bovenaan, pas onderaan de permit all
+//                .authorizeRequests()
+//                // voor deze urls moet je role user hebben om erbij te kunnen
+//                // TODO: urls hier aanpassen naar bestaande links
+//                .antMatchers("/test", "/orders")
+//                // mag niet "ROLE_USER" zijn, waarom?
+//                .hasRole("USER")
+//                // hier mag iedereen bij
+//                .antMatchers("/", "/**")
+//                .permitAll()
+//
+//                // test
+//                .and()
+//                .logout()
+//                .logoutSuccessUrl("/");
+//
+//    }
 
     // Password Encoder
 //    @Override
