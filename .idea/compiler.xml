@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
-      <module name="demo" target="11" />
+      <module name="demo" target="8" />
       <module name="location3" target="11" />
     </bytecodeTargetLevel>
   </component>
