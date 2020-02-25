@@ -1,0 +1,15 @@
+D:\git\ownprojects\location3\src\main\java\com\example\demo\controller\RegistrationController.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\entity\Perceel.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\repository\GebruikerRepository.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\entity\Adres.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\entity\Gebruiker.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\entity\Woning.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\security\GebruikerRepositoryUserDetailsService.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\repository\WoningRepository.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\DemoApplication.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\controller\HomeController.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\security\RegistrationForm.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\entity\Persoon.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\repository\JdbcWoningRepository.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\security\SecurityConfig.java
+D:\git\ownprojects\location3\src\main\java\com\example\demo\WoningServiceServletInitializer.java

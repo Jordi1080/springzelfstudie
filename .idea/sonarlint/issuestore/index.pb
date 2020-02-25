@@ -92,16 +92,8 @@ Esrc/main/java/com/example/demo/controller/RegistrationController.java,7\1\71e4
 Rsrc/main/java/com/example/demo/security/GebruikerRepositoryUserDetailsService.java,1\8\18187eb85dc131178c3c50d407ce7755ca4575cc
 r
 B.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml,b\b\bbcf560bc6629518d8df2cc946d04946846a0c92
-é
-^.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_2_2_RELEASE.xml,1\5\1540fc510e247248adcad783fc94ae6e3eca5849
 è
 _.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_2_RELEASE.xml,8\4\84eefef509efaf0311aa2b39f405d8d0054a2d89
-å
-\.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_1_RELEASE.xml,8\8\88cb58db1eb8ed2938c4eb7cc8531becb16aa825
-ä
-Z.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_1_RELEASE.xml,9\e\9e672424fb3d8f2d9af003ada4e29c37da25d7a9
-â
-Y.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_1_RELEASE.xml,3\d\3d5a88989fcf2b5e6dc6a639fae7049b80d47720
 à
 X.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml,2\f\2ffddd07ad1c0c36c3bd0eb7cef686df87403348
 q
@@ -123,3 +115,5 @@ Asrc/test/java/com/example/demo/controller/HomeControllerTest.java,0\c\0c43f9d1
 :
 
 Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+o
+?src/main/java/com/example/demo/controller/WoningController.java,0\f\0fed9ee9c03f3d28ddf0f21034834d1bf601b7a5

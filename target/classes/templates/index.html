@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>
+		Dit is een titel
+	</title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+<!--	<script type="text/javascript"  src="../static/main.js"></script>-->
+
+<!--	<script type="text/javascript">-->
+<!--		function geefLijst(){-->
+
+<!--		}-->
+<!--	</script>-->
+</head>
+
+<body>
+
+	<h1>My First Heading (gaat verdwijnen)</h1>
+	<p id="par">My first paragraph.</p>
+
+
+	<button type="button" id="testButton" onclick="testKnop()">Click Me!</button>
+
+	<span th:text="${title}"></span>
+
+	<tr th:each="woning:${woninglijst}">
+		<td th:text="${woning.getBouwjaar()}" ></td>
+	</tr>
+
+	<button type="button" id="toonHuizenButton" onclick="geefLijst()">Klik hier voor huizen</button>
+
+</body>
+</html>
