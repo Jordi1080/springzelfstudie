@@ -18,6 +18,7 @@
     <properties>
         <java.version>8</java.version>
         <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
+        <docker.image.prefix>tacocloud</docker.image.prefix>
     </properties>
 
     <dependencies>
@@ -66,10 +67,11 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+        <!--        Security uit voor het gemak-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-security</artifactId>-->
+        <!--        </dependency>-->
         <!--        <dependency>-->
         <!--            <groupId>org.springframework.security</groupId>-->
         <!--            <artifactId>spring-security-ldap</artifactId>-->
@@ -98,11 +100,24 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.3</version>
+                <configuration>
+                    <repository>
+                        ${docker.image.prefix}/${project.artifactId}
+                    </repository>
+                    <buildArgs>
+                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+                    </buildArgs>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
     <packaging>
-        war
+        jar
     </packaging>
 
 </project>
